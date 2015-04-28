@@ -1,0 +1,108 @@
+﻿<html ng-app="mynodemodule">
+<head title="">
+    <script src="~/Scripts/jquery-2.1.3.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/MyScripts/module.js"></script>
+    <script src="~/Scripts/MyScripts/service.js"></script>
+    <script src="~/Scripts/MyScripts/controller.js"></script>
+</head>
+
+
+<body ng-controller="mynodecontroller">
+    <h2>Index</h2>
+    <table class="table table-bordered">
+        <tr>
+            <td>
+                EmpNo
+            </td>
+            <td>
+                <input type="text" class="form-control" ng-model="Employee.EmpNo"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                EmpName
+            </td>
+            <td>
+                <input type="text" class="form-control" ng-model="Employee.EmpName" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Salary
+            </td>
+            <td>
+                <input type="text" class="form-control" ng-model="Employee.Salary" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                DeptName
+            </td>
+            <td>
+                <input type="text" class="form-control" ng-model="Employee.DeptName" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Designation
+            </td>
+            <td>
+                <input type="text" class="form-control" ng-model="Employee.Designation" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="New" class="btn btn-primary" 
+                        ng-click="clear()"/>
+            </td>
+            <td>
+                <input type="button" value="Save" class="btn btn-success"
+                       ng-click="save()" />
+            </td>
+        </tr>
+    </table>
+    <table class="table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <td>
+                    ID
+                </td>
+                <td>
+                    EmpNo
+                </td>
+                <td>
+                    EmpName
+                </td>
+                <td>
+                    Salary
+                </td>
+                <td>
+                    DeptName
+                </td>
+                <td>
+                    Designation
+                </td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody ng-repeat="Emp in Employees">
+            <tr>
+                <td>{{Emp._id}}</td>
+                <td>{{Emp.EmpNo}}</td>
+                <td>{{Emp.EmpName}}</td>
+                <td>{{Emp.Salary}}</td>
+                <td>{{Emp.DeptName}}</td>
+                <td>{{Emp.Designation}}</td>
+                @*<td>
+                    <button  class="glyphicon glyphicon-trash" ng-click="delete(Emp)"></button>
+                </td>*@
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        {{Message}}
+    </div>
+</body>
+</html>

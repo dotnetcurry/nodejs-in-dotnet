@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NG_EXP_Node", "NG_EXP_Node\NG_EXP_Node.njsproj", "{B6BB1732-7E10-454C-962A-347FF1AD34F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Node_MVCClient", "Node_MVCClient\Node_MVCClient.csproj", "{440CA848-E2E1-4CFD-B16D-AC8C7C637FFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6BB1732-7E10-454C-962A-347FF1AD34F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6BB1732-7E10-454C-962A-347FF1AD34F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6BB1732-7E10-454C-962A-347FF1AD34F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6BB1732-7E10-454C-962A-347FF1AD34F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{440CA848-E2E1-4CFD-B16D-AC8C7C637FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440CA848-E2E1-4CFD-B16D-AC8C7C637FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440CA848-E2E1-4CFD-B16D-AC8C7C637FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{440CA848-E2E1-4CFD-B16D-AC8C7C637FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
